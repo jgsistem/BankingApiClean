@@ -33,7 +33,8 @@ JdbcTemplate template;
 	
 	@Override
 	public List<BankAccount> getAccountIdCustomer(Long id_customer) {		
-		String sql="SELECT 	bank_account_id, number, balance, islocked,customer_id FROM bank_account WHERE customer_id = "+"'"+id_customer+"'"  ;
+		String sql="SELECT 	bank_account_id, number, balance, islocked,customer_id FROM bank_account WHERE customer_id = '"+id_customer+"'"  ;
+		System.out.println(sql);
  	 return template.query(sql,new ResultSetExtractor<List<BankAccount>>(){  
 		    
 		     public List<BankAccount> extractData(ResultSet rs) throws SQLException,  
