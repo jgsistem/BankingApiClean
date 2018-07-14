@@ -23,8 +23,7 @@ import javax.ws.rs.core.MediaType;
 public class Intercepter implements ContainerRequestFilter{
 
 	@Override	
-	public void filter(ContainerRequestContext request) throws IOException {		
-		
+	public void filter(ContainerRequestContext request) throws IOException {
 		String url = request.getUriInfo().getAbsolutePath().toString();
 		if (url.contains("/api/login")){
 		return;
