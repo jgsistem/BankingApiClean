@@ -1,7 +1,9 @@
 ---
 applications:
-- name: my-JG17ApplicationBanking
-  path: /home/travis/build/jgsistem/BankingApiClean/target/clean-architecture-0.0.1-SNAPSHOT.jar
+- name: my-JGapplication17
+  path: /home/travis/build/jgsistem/BankingApiClean/target/banking-0.1.jar
+                                                         
   memory: 1024M
   instances: 1
   random-route: true
+  
