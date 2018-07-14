@@ -1,6 +1,6 @@
 ---
 applications:
-- name: my-JGapplication17
+- name: my-JGapplication17Banking
   path: /home/travis/build/jgsistem/BankingApiClean/target/banking-0.1.jar
                                                          
   memory: 1024M
