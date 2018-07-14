@@ -4,5 +4,4 @@ applications:
   path: /home/travis/build/jgsistem/BankingApiClean/target/banking-0.1.jar                                                         
   memory: 1024M
   instances: 1
-  random-route: true
-  
+  random-route: true  
